@@ -12,7 +12,7 @@ const WorkoutDetails = ({ workout,show,setShow }) => {
     if (!users) {
       return
     }
-   await ax.delete(https://back-tan.vercel.app/api/workouts/' + workout._id,{ headers: {
+   await ax.delete("https://back-tan.vercel.app/api/workouts/' + workout._id,{ headers: {
       'Authorization': `Bearer ${users.token}`
     }})
   
